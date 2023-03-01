@@ -19,8 +19,8 @@ personalMovieDB = {
 // personalMovieDB.movies[secondFilm] = rateSecondFilm;
 
 for(let i = 0; i < 2; i++){
-    let lastFilm = prompt("What last film did you watch?", "");
-    let rateLastFilm = prompt("How would you rate it?", "");
+    let lastFilm = prompt("What last film did you watch?", "").trim();
+    let rateLastFilm = prompt("How would you rate it?", "").trim();
 
     if(lastFilm !== null && rateLastFilm !== null && lastFilm !== "" && lastFilm.length < 50){
         personalMovieDB.movies[lastFilm] = rateLastFilm;
